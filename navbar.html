@@ -11,7 +11,6 @@
             padding: 0;
         }
 
-        
         nav {
             /* border: 2px solid red; */
             background-color: darkblue;
@@ -23,45 +22,84 @@
             height: 60px;
         }
 
-        .logo-container{
+        .logo-container {
             display: flex;
-            flex-direction:row;
+            flex-direction: row;
             align-items: center;
             gap: 10px;
         }
 
-        .logo-container img{
+        .logo-container img {
             height: 35px;
-        } 
+            width: 35px;
+            border-radius: 50%;
+        }
 
-        .logo-container h1{
+        .logo-container h1 {
             color: white;
             font-size: 17px;
             font-family: cursive;
         }
 
-     
-        .links{
+
+        .links {
             display: flex;
             flex-direction: row;
             gap: 20px;
         }
 
-        .links a{
+        .links a {
             color: white;
-            text-decoration:none;
+            text-decoration: none;
         }
 
-        .nav-btn{
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-btn {
             display: flex;
             flex-direction: row;
             gap: 20px;
         }
 
-        .nav-btn button{
-            padding: 4px 5px;
+        .nav-btn button {
+            padding: 6px 8px;
+            border-radius: 15px 0px 15px 0px;
+            border: none;
+            cursor: pointer;
+            background-color: beige;
         }
-        
+
+        .nav-btn button:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .bg-banner {
+            height: 300px;
+            width: auto;
+            /* border: 2px solid crimson; */
+            background-image: url("./images/nature.jpg");
+            background-repeat: no-repeat;
+            /* background-size: 500px; */
+            background-size: cover;
+            background-position: center;
+            /* background-position: -13px -159px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            justify-content: center;
+            padding: 0px 190px;
+        }
+
+        .bg-banner h2,
+        .bg-banner p {
+            color: white;
+            /* text-align: center; */
+        }
     </style>
 </head>
 
@@ -83,10 +121,20 @@
                 <button>Login</button>
                 <button>Signup</button>
             </div>
-
-
         </nav>
     </header>
+    <main>
+        <section class="bg-banner">
+            <h2 class="">HTC Navy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ullam ea accusamus aut! Neque libero
+                tenetur dolorem necessitatibus odit dignissimos eum possimus nam voluptates, nulla quam commodi,
+                nostrum, maiores nisi laboriosam distinctio repellendus sint? Aliquam reprehenderit tenetur, ad velit
+                dignissimos voluptatem asperiores enim nostrum facere sequi nulla est, explicabo unde corrupti doloribus
+                numquam necessitatibus aspernatur corporis laudantium et sint! Ea, esse tempora id nemo dicta modi
+                voluptatibus repellendus eos! Illo, deleniti. Facilis odio molestiae mollitia reiciendis aut nemo nobis
+                quo.</p>
+        </section>
+    </main>
 </body>
 
 </html>
